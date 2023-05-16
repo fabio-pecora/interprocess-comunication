@@ -1,5 +1,5 @@
-#CSC 315 Final 2022
-#Julia Seleznyov
+#CSC 315 Final 2023
+#Fabio Pecora
 import mysql.connector
 from pprint import pprint
 import sys
@@ -10,7 +10,7 @@ import sys
         host='localhost',
         user='api',
         password='GRAPH123',
-        database='CSC315Final2022'
+        database='CSC315Final2023'
     )
     print("Error: Cannot connect to the database.")
     sys.exit(1)
@@ -71,11 +71,11 @@ def deleteFavorite(userID,bandName):
 
 
 # insert to users to the databse
-newUser(1,'Julia Seleznyov', 'United States')
-newUser(2,'Jungkook Jeon', 'Korea')
-newUser(3,'Michael Seleznyov', 'United States')
+newUser(1,'Fabio Pecora', 'United States')
+newUser(2,'Marco Mengoni', 'Italy')
+newUser(3,'Francesco Pecora', 'United States')
 newUser(4,'Cristiano Ronaldo', 'Portugal')
-newUser(5,'Marina Seleznyov', 'United States')
+newUser(5,'Lebron James', 'United States')
 newUser(4,'Lionel Messi', 'Argentina')
 
 pprint(queryExecute('SELECT * FROM User;'))
